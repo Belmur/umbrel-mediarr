@@ -1,29 +1,50 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
-version: "1.0.0"
-port: 4000
+id: mediarr-nzbdav
+name: nzb DAV
+tagline: Usenet streaming with a WebDAV server and a SABnzbd-compatible API
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/nzb-dav.svg
+category: Downloaders
+version: "0.5.4"
+port: 3000
 description: >-
-  Add your app's description here.
+  NzbDav is a WebDAV server that allows you to mount and browse NZB documents as a virtual file system without downloading. It's designed to integrate with other media management tools, like Sonarr and Radarr, by providing a SABnzbd-compatible API. With it, you can build an infinite Plex or Jellyfin media library that streams directly from your usenet provider at maxed-out speeds, without using any storage space on your own server.
 
 
-  You can also add newlines!
+  Key Features
+  📁 WebDAV Server - Host your virtual file system over HTTP(S)
+  ☁️ Mount NZB Documents - Mount and browse NZB documents without downloading.
+  📽️ Full Streaming and Seeking Abilities - Jump ahead to any point in your video streams.
+  📁 Stream archived contents - View, stream, and seek content within RAR and 7z archives.
+  🔐 Stream password-protected content - View, stream, and seek within password-protected archives.
+  💙 Healthchecks & Repairs - Automatically replace content that has been removed from your usenet provider
+  🧩 SABnzbd-Compatible API - Use NzbDav as a drop-in replacement for sabnzbd.
+  🙌 Sonarr/Radarr Integration - Configure it once, and leave it unattended.
 
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
+developer: nzbdav-dev
+website: https://github.com/nzbdav-dev/nzbdav
+submitter: Belmur
 submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+repo: https://github.com/nzbdav-dev/nzbdav
+support: https://github.com/nzbdav-dev/nzbdav/issues
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - 1.png
+  - 2.png
+  - 3.png
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  Added support for multiple usenet providers
+  Added callback to sonarr/radarr to refresh monitored downloads after an nzbdav queue-item finishes processing.
+  Added *.strm-based import strategy to remove Rclone dependency for Jellyfin/Emby users.
+  Improved streaming speeds.
+  Improved loading speeds of /queue and /health pages.
+  Improved speed of symlink scans during repairs.
+  Improved queue processing speeds.
+  Improved usenet connections management.
+  Added a setting to control streaming bandwidth priority (vs queue processing).
+  Added a setting to control how to handle duplicate nzbs.
+  Added a setting to control file extensions to ignore during nzb imports.
+  Added a setting to control the category for manual nzb uploads.
+  Added option to disable frontend and webdav auth (must be configured through env variables)
+  Switched backend usenet libs from keimpema/Usenet → UsenetSharp / RapidYencSharp
 dependencies: []
 path: ""
 defaultUsername: ""
