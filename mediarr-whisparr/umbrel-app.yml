@@ -1,4 +1,4 @@
-manifestVersion: 1.1
+manifestVersion: 1
 id: mediarr-whisparr
 name: Whisparr
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/whisparr.svg
@@ -26,5 +26,3 @@ releaseNotes: >-
 defaultUsername: ""
 defaultPassword: ""
 torOnly: false
-permissions:
-  - STORAGE_DOWNLOADS
