@@ -11,13 +11,29 @@ description: >-
 
 
   Key Features
+
+
   📁 WebDAV Server - Host your virtual file system over HTTP(S)
+  
+  
   ☁️ Mount NZB Documents - Mount and browse NZB documents without downloading.
+  
+  
   📽️ Full Streaming and Seeking Abilities - Jump ahead to any point in your video streams.
+  
+  
   📁 Stream archived contents - View, stream, and seek content within RAR and 7z archives.
+  
+  
   🔐 Stream password-protected content - View, stream, and seek within password-protected archives.
+  
+  
   💙 Healthchecks & Repairs - Automatically replace content that has been removed from your usenet provider
+  
+  
   🧩 SABnzbd-Compatible API - Use NzbDav as a drop-in replacement for sabnzbd.
+  
+  
   🙌 Sonarr/Radarr Integration - Configure it once, and leave it unattended.
 
 developer: nzbdav-dev
@@ -27,24 +43,50 @@ submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/nzbdav-dev/nzbdav
 support: https://github.com/nzbdav-dev/nzbdav/issues
 gallery:
-  - 1.png
-  - 2.png
-  - 3.png
+  - https://raw.githubusercontent.com/Belmur/umbrel-mediarr/refs/heads/main/mediarr-nzbdav/1.png
+  - https://raw.githubusercontent.com/Belmur/umbrel-mediarr/refs/heads/main/mediarr-nzbdav/2.png
+  - https://raw.githubusercontent.com/Belmur/umbrel-mediarr/refs/heads/main/mediarr-nzbdav/3.png
 releaseNotes: >-
-  Added support for multiple usenet providers
-  Added callback to sonarr/radarr to refresh monitored downloads after an nzbdav queue-item finishes processing.
-  Added *.strm-based import strategy to remove Rclone dependency for Jellyfin/Emby users.
-  Improved streaming speeds.
-  Improved loading speeds of /queue and /health pages.
-  Improved speed of symlink scans during repairs.
-  Improved queue processing speeds.
-  Improved usenet connections management.
-  Added a setting to control streaming bandwidth priority (vs queue processing).
-  Added a setting to control how to handle duplicate nzbs.
-  Added a setting to control file extensions to ignore during nzb imports.
-  Added a setting to control the category for manual nzb uploads.
-  Added option to disable frontend and webdav auth (must be configured through env variables)
-  Switched backend usenet libs from keimpema/Usenet → UsenetSharp / RapidYencSharp
+  - Added support for multiple usenet providers
+
+
+  - Added callback to sonarr/radarr to refresh monitored downloads after an nzbdav queue-item finishes processing.
+
+
+  - Added *.strm-based import strategy to remove Rclone dependency for Jellyfin/Emby users.
+
+
+  - Improved streaming speeds.
+
+
+  - Improved loading speeds of /queue and /health pages.
+
+
+  - Improved speed of symlink scans during repairs.
+
+
+  - Improved queue processing speeds.
+
+
+  - Improved usenet connections management.
+
+
+  - Added a setting to control streaming bandwidth priority (vs queue processing).
+
+
+  - Added a setting to control how to handle duplicate nzbs.
+
+
+  - Added a setting to control file extensions to ignore during nzb imports.
+
+
+  - Added a setting to control the category for manual nzb uploads.
+
+
+  - Added option to disable frontend and webdav auth (must be configured through env variables)
+
+
+  - Switched backend usenet libs from keimpema/Usenet → UsenetSharp / RapidYencSharp
 dependencies: []
 path: ""
 defaultUsername: ""
