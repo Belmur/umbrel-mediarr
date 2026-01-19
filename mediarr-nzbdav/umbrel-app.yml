@@ -12,27 +12,19 @@ description: >-
 
   Key Features
 
-
   📁 WebDAV Server - Host your virtual file system over HTTP(S)
-  
   
   ☁️ Mount NZB Documents - Mount and browse NZB documents without downloading.
   
-  
   📽️ Full Streaming and Seeking Abilities - Jump ahead to any point in your video streams.
-  
   
   📁 Stream archived contents - View, stream, and seek content within RAR and 7z archives.
   
-  
   🔐 Stream password-protected content - View, stream, and seek within password-protected archives.
-  
   
   💙 Healthchecks & Repairs - Automatically replace content that has been removed from your usenet provider
   
-  
   🧩 SABnzbd-Compatible API - Use NzbDav as a drop-in replacement for sabnzbd.
-  
   
   🙌 Sonarr/Radarr Integration - Configure it once, and leave it unattended.
 
