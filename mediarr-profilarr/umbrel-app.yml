@@ -10,22 +10,24 @@ description: >-
  Configuration management tool for Radarr/Sonarr that automates importing and version control of custom formats and quality profiles.
  
  
-  Key Features
+ Key Features
 
-  🔄 Automatic synchronization with remote configuration databases
-  🎯 Direct import to Radarr/Sonarr instances
-  🔧 Git-based version control of your configurations
-  ⚡ Preserve local customizations during updates
-  🛠️ Built-in conflict resolution
+ 🔄 Automatic synchronization with remote configuration databases
+ 🎯 Direct import to Radarr/Sonarr instances
+ 🔧 Git-based version control of your configurations
+ ⚡ Preserve local customizations during updates
+ 🛠️ Built-in conflict resolution
 
 developer: Dictionarry
 website: https://dictionarry.dev/
 submitter: Belmur
-submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/Dictionarry-Hub/profilarr
 support: https://github.com/Dictionarry-Hub/profilarr/issues
 gallery:
-  
+  - 1.png
+  - 2.png
+  - 3.png
+
 releaseNotes: >-
  - fix(compiler): only compile both / arr specific formats on import by @santiagosayshey in c30dc33
  - refactor(media-management): use ArrHandler logic from importer module to consolidate media management importing by @santiagosayshey in 7f5f44c
