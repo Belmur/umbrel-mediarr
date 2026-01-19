@@ -12,7 +12,7 @@ services:
     image: nzbdav/nzbdav:0.5.4
     restart: unless-stopped
     healthcheck:
-      test: curl -f http://localhost:3000/health || exit 1
+      test: ["CMD-SHELL", "bash -c ':> /dev/tcp/127.0.0.1/80' || exit 1"]
       # Check every 1 minute
       interval: 1m
       # If it fails 3 times (3 minutes total), restart it
