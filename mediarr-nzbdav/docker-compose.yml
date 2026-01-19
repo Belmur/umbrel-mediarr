@@ -5,14 +5,14 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: mediarr-nzbdav_nzbdav_1
-      APP_PORT: 3001
+      APP_HOST: mediarr-nzbdav_server_1
+      APP_PORT: 3000
     
   server:
     image: nzbdav/nzbdav:0.5.4
     restart: unless-stopped
     healthcheck:
-      test: curl -f http://localhost:3001/health || exit 1
+      test: curl -f http://mediarr-nzbdav_server_1:3000/health || exit 1
       # Check every 1 minute
       interval: 1m
       # If it fails 3 times (3 minutes total), restart it
