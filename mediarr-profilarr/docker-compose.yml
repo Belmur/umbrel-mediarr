@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: mediarr-profilarr_profilarr_1
+      APP_PORT: 6868
+
+  profilarr:
+    image: santiagosayshey/profilarr:latest
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA_DIR}/data:/config
+    environment:
+      # Change these IDs to match your Docker user that you got from above
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC

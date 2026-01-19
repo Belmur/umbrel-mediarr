@@ -1,0 +1,39 @@
+manifestVersion: 1
+id: mediarr-profilarr
+name: Profilarr
+tagline: Configuration Management Platform for Radarr/Sonarr
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/profilarr.svg
+category: Downloaders
+version: "1.1.3"
+port: 6868
+description: >-
+ Configuration management tool for Radarr/Sonarr that automates importing and version control of custom formats and quality profiles.
+ 
+ 
+  Key Features
+
+  🔄 Automatic synchronization with remote configuration databases
+  🎯 Direct import to Radarr/Sonarr instances
+  🔧 Git-based version control of your configurations
+  ⚡ Preserve local customizations during updates
+  🛠️ Built-in conflict resolution
+
+developer: Dictionarry
+website: https://dictionarry.dev/
+submitter: Belmur
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/Dictionarry-Hub/profilarr
+support: https://github.com/Dictionarry-Hub/profilarr/issues
+gallery:
+  
+releaseNotes: >-
+ - fix(compiler): only compile both / arr specific formats on import by @santiagosayshey in c30dc33
+ - refactor(media-management): use ArrHandler logic from importer module to consolidate media management importing by @santiagosayshey in 7f5f44c
+ - feat(tasks): add ability to change repo sync / backup task interval by @santiagosayshey in 2e2abb9
+ - migration(languages): set default language score to -999999 by @santiagosayshey in 6c40d35
+ - chore(deploy): add environment handling and entrypoint script to set PGID, PUID and UMASK by @santiagosayshey in 7270bbf
+ 
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
