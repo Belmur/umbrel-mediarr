@@ -23,7 +23,7 @@ services:
       timeout: 5s
     volumes:
       - ${APP_DATA_DIR}/config:/config
-      - ${UMBREL_ROOT}/data/storage/downloads/nzbdav:/downloada/nzbdav
+      - ${UMBREL_ROOT}/data/storage/downloads/nzbdav:/downloads/nzbdav
     environment:
       # Change these IDs to match your Docker user that you got from above
       - PUID=1000
