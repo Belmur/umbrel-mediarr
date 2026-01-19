@@ -5,10 +5,27 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: sparkles-hello-world_server_1
+      APP_HOST: mediarr-nzbdav_nzbdav_1
       APP_PORT: 3000
     
   server:
-    image: getumbrel/community-app-store-hello-world:latest
-    user: "1000:1000"
-    init: true
+    image: nzbdav/nzbdav:0.5.4
+    restart: unless-stopped
+    healthcheck:
+      test: curl -f http://localhost:3000/health || exit 1
+      # Check every 1 minute
+      interval: 1m
+      # If it fails 3 times (3 minutes total), restart it
+      retries: 3
+      # Give it 5 seconds to boot up
+      start_period: 5s
+      # If it doesn't answer in 5 seconds, assume it's frozen
+      timeout: 5s
+    volumes:
+      - ${APP_DATA_DIR}/config:/config
+      - ${UMBREL_ROOT}/data/storage/downloads/nzbdav:/downloada/nzbdav
+    environment:
+      # Change these IDs to match your Docker user that you got from above
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
