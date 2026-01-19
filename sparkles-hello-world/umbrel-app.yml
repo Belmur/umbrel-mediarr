@@ -1,23 +1,23 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
-version: "1.0.0"
-port: 4000
+id: mediarr-nzbdav
+name: nzb DAV
+tagline: Usenet streaming with a WebDAV server and a SABnzbd-compatible API
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/nzb-dav.svg
+category: Downloaders
+version: "0.5.4"
+port: 3000
 description: >-
-  Add your app's description here.
+  NzbDav is a WebDAV server that allows you to mount and browse NZB documents as a virtual file system without downloading. It's designed to integrate with other media management tools, like Sonarr and Radarr, by providing a SABnzbd-compatible API. With it, you can build an infinite Plex or Jellyfin media library that streams directly from your usenet provider at maxed-out speeds, without using any storage space on your own server.
 
 
   You can also add newlines!
 
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
+developer: nzbdav-dev
+website: https://github.com/nzbdav-dev/nzbdav
+submitter: Belmur
 submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+repo: https://github.com/nzbdav-dev/nzbdav
+support: https://github.com/nzbdav-dev/nzbdav/issues
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
