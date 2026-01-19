@@ -21,8 +21,8 @@ description: >-
   Add your indexers to Prowlarr and they will be automatically available in Sonarr.
 developer: Sonarr
 website: https://sonarr.tv/
-dependencies:
-  - transmission
+#dependencies:
+ # - transmission
 repo: https://github.com/Sonarr/Sonarr
 support: https://github.com/Sonarr/Sonarr/issues
 port: 8990
