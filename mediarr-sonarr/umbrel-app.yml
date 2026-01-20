@@ -1,6 +1,6 @@
 manifestVersion: 1.1
 id: mediarr-sonarr
-name: Sonarr
+name: Sonarr 2nd Instance
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/sonarr.svg
 category: media
 version: "4.0.16.2944"

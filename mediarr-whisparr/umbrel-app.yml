@@ -21,7 +21,8 @@ gallery:
 path: ""
 releaseNotes: >-
  Version 3.x (based on Radarr), focuses on scenes, but also supports movies.
- Docker-only, use image: hotio/whisparr:v3 in Docker Compose See https://wiki.servarr.com/whisparr/installation/docker
+ Docker-only, use image: hotio/whisparr:v3 in Docker Compose
+ See https://wiki.servarr.com/whisparr/installation/docker for more details.
 
 defaultUsername: ""
 defaultPassword: ""
