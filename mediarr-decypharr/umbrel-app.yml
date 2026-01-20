@@ -1,0 +1,82 @@
+manifestVersion: 1
+id: mediarr-decypharr
+name: Decypharr
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/decypharr.png
+category: media
+version: "1.1.6"
+tagline: A Qbittorent Mock with Debrid Support
+description: >-
+ What is Decypharr?
+ 
+ Decypharr combines the power of QBittorrent with popular Debrid services to enhance your media management. It provides a familiar interface for Sonarr, Radarr, and other *Arr applications.
+
+
+ Features
+
+ - Mock Qbittorent API that supports the Arrs (Sonarr, Radarr, Lidarr etc)
+
+
+ - Full-fledged UI for managing torrents
+ 
+
+ - Multiple Debrid providers support
+ 
+
+ - WebDAV server support for each debrid provider
+ 
+
+ - Optional mounting of WebDAV to your system(using Rclone)
+ 
+ 
+ - Repair Worker for missing files
+ 
+
+ Supported Debrid Providers
+  Real Debrid
+  Torbox
+  Debrid Link
+  All Debrid  
+  
+developer: sirrobot01 
+website: https://sirrobot01.github.io/decypharr/
+repo: https://github.com/sirrobot01/decypharr
+support: https://github.com/sirrobot01/decypharr/issues
+port: 8282
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+releaseNotes: >-
+ Changelog
+ - Add feature to remove torrent tracker URLs from torrents for private tracker downloads (#99)
+
+ 
+ - Merge branch 'beta' of github.com:sirrobot01/decypharr into beta
+ 
+ 
+ - Update version badge link format (#163)
+ 
+ 
+ - fix gh workflow
+ 
+ 
+ - fix issuses with rclone on windows
+ 
+ 
+ - fix regression in webdav file removal logic (#162)
+ 
+ 
+ - hotfix: downloader deleting files with multi-season
+ 
+ 
+ - minor fixes
+ 
+ 
+ - remove ci/cd test
+ 
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS

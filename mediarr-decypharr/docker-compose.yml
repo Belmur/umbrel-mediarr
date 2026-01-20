@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: mediarr-decypharr_decypharr_1
+      APP_PORT: 8282
+      PROXY_AUTH_WHITELIST: "/api/*"
+      
+  decypharr:
+    image: ghcr.io/sirrobot01/decypharr:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ${APP_DATA_DIR}/config:/app
+      - ${UMBREL_ROOT}/data/storage/downloads/decypharr:/downloads/decypharr:rshared
+    restart: on-failure
+    devices:
+      - /dev/fuse:/dev/fuse:rwm
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined
