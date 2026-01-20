@@ -5,6 +5,7 @@ services:
     environment:
       APP_HOST: mediarr-whisparr_whisparr_1
       APP_PORT: 6969
+      PROXY_AUTH_WHITELIST: "/api/*"
       
   whisparr:
     image: ghcr.io/hotio/whisparr:v3
