@@ -13,7 +13,7 @@ developer: Whisparr
 website: https://whisparr.com/
 repo: https://github.com/whisparr/Whisparr
 support: https://github.com/whisparr/Whisparr/issues
-port: 8990
+port: 6969
 gallery:
   - 1.jpg
   - 2.jpg
