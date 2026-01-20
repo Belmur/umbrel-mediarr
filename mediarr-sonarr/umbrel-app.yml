@@ -8,6 +8,9 @@ tagline: Smart PVR for newsgroup and bittorrent users
 description: >-
   This is a second instance of Sonarr based on the official Umbrel AppStore.
   This can be used for 4k content or anime to keep your libraries separate.
+
+  ******* It does not populate Downloaders or Indexers ********
+  ******* You need to set these up manually ********
   
   Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
 
@@ -41,5 +44,3 @@ defaultPassword: ""
 torOnly: false
 permissions:
   - STORAGE_DOWNLOADS
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-apps/commit/60878f278d544b204d8e7c96240c797f43a9b319
