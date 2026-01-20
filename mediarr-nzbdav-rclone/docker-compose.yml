@@ -25,9 +25,10 @@ services:
       - apparmor:unconfined
     devices:
       - /dev/fuse:/dev/fuse:rwm
-    depends_on: mediarr-nzbdav_nzbdav_1
-      conditions: service_healthy
-      restart: true
+    depends_on:
+      mediarr-nzbdav_nzbdav_1:
+        conditions: service_healthy
+        restart: true
     command: >
     mount nzbdav: ${UMBREL_ROOT}/data/storage/downloads/nzbdav
       --uid=1000
