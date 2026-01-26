@@ -9,7 +9,7 @@ services:
       PROXY_AUTH_WHITELIST: "/api/*"
 
   nzbdav-rclone:
-    image: nzbdav/nzbdav:latest
+    image: rclone/rclone:latest
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/config/rclone/rclone.conf:/config/rclone/rclone.conf:ro

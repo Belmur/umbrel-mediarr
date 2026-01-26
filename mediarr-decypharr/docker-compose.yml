@@ -16,7 +16,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/config:/app
       - ${UMBREL_ROOT}/data/storage/downloads/decypharr:/downloads/decypharr:rshared
-    restart: on-failure
+    restart: unless-stopped
     devices:
       - /dev/fuse:/dev/fuse:rwm
     cap_add:

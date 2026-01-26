@@ -31,7 +31,7 @@ website: https://sonarr.tv/
  # - transmission
 repo: https://github.com/Sonarr/Sonarr
 support: https://github.com/Sonarr/Sonarr/issues
-port: 8990
+port: 8989
 gallery:
   - https://getumbrel.github.io/umbrel-apps-gallery/sonarr/1.jpg
   - https://getumbrel.github.io/umbrel-apps-gallery/sonarr/2.jpg

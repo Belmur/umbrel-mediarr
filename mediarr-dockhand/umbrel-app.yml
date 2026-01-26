@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: mediarr-dockhand
+name: Dockhand
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/dockhand.png
+category: media
+version: "latest"
+tagline: Modern Docker management for everyone.
+description: >-
+ Dockhand is a modern Docker management platform that simplifies the deployment and management of Docker containers. It provides an intuitive web interface, making it easy for users of all skill levels to manage their Docker environments. With features like one-click app installations, automatic updates, and resource monitoring, Dockhand streamlines the process of running and maintaining Docker containers.  
+  
+website: https://dockhand.pro/
+repo: https://github.com/Finsys/dockhand
+support: https://github.com/Finsys/dockhand/issues
+port: 6969
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+#releaseNotes: >-
+ 
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false

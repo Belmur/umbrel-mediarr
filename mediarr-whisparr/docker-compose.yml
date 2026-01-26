@@ -16,4 +16,4 @@ services:
     volumes:
       - ${APP_DATA_DIR}/config:/config
       - ${UMBREL_ROOT}/data/storage/downloads:/downloads
-    restart: on-failure
+    restart: unless-stopped
