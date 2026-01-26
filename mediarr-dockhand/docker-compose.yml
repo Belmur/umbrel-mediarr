@@ -5,12 +5,9 @@ services:
     environment:
       APP_HOST: mediarr-dockhand_dockhand_1
       APP_PORT: 3010
-      PROXY_AUTH_WHITELIST: "/api/*"
 
   dockhand:
     image: fnsys/dockhand:latest
-    ports:
-      - 3010:3000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - dockhand_data:/app/data

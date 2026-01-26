@@ -1,7 +1,7 @@
 manifestVersion: 1.1
 id: mediarr-sonarr-anime
 name: Sonarr Anime
-icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/sonarr.svg
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/sonarr.png
 category: media
 version: "4.0.16.2944"
 tagline: Smart PVR for newsgroup and bittorrent users
