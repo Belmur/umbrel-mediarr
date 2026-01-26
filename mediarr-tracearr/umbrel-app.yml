@@ -1,0 +1,62 @@
+manifestVersion: 1.1
+id: mediarr-tracearr
+name: Tracearr
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/tracearr.svg
+category: media
+version: "1.4.8"
+tagline: Real-time monitoring for Plex, Jellyfin, and Emby servers. Track streams, analyze playback, and detect account sharing from a single dashboard.
+description: >-
+ Tracearr is a monitoring platform for Plex, Jellyfin, and Emby. Track streams in real-time, dig into playback analytics, and spot account sharing before it gets out of hand.
+
+ What It Does
+ Multi-Server Dashboard — Connect Plex, Jellyfin, and Emby to a single interface. No more switching between apps.
+
+ Session Tracking — Complete session history: who watched what, when, where, and on what device. Every stream includes geolocation data.
+
+ Stream Analytics — See what's transcoding vs direct playing, track bandwidth usage, and see what people actually watch. Codec breakdowns, resolution stats, device compatibility scores. Enhanced IP geolocation includes ASN data, continent, and postal codes.
+
+ Library Analytics — Four dedicated pages to understand your media collection:
+
+ Overview — Item counts, storage usage, growth charts over time.
+ Quality — Resolution and codec distribution. Track how your 4K vs 1080p ratio changes.
+ Storage — Usage predictions, duplicate detection across servers, stale content identification, and ROI analysis (watch hours per GB).
+ Watch — Engagement metrics, completion rates, viewing patterns by hour and month, binge detection.
+ Live TV & Music — Not just movies and shows. Track live TV sessions and music playback across all your servers.
+
+ Stream Map — Visualize where your streams originate on a world map. Filter by user, server, or time period.
+
+ Sharing Detection — Six rule types flag suspicious activity:
+
+ Impossible Travel — NYC then London 30 minutes later? That's not one person.
+ Simultaneous Locations — Same account streaming from two cities at once.
+ Device Velocity — Too many unique IPs in a short window signals shared credentials.
+ Concurrent Streams — Set limits per user.
+ Geo Restrictions — Block streaming from specific countries.
+ Account Inactivity — Get notified when accounts go dormant for a configurable period.
+ Trust Scores — Users earn (or lose) trust based on behavior. Violations drop scores automatically.
+
+ Real-Time Alerts — Discord webhooks and custom notifications fire instantly when rules trigger.
+
+ Public API — Read-only REST API for third-party integrations. Generate an API key in Settings, then explore endpoints at /api-docs (Swagger UI). Works with Homarr, Home Assistant, or anything that speaks HTTP.
+
+ Bulk Actions — Multi-select operations across tables. Acknowledge or dismiss violations in bulk, reset trust scores, enable/disable rules, delete session history.
+
+ Data Import — Already using Tautulli or Jellystat? Import your watch history so you don't start from scratch.
+
+repo: https://github.com/connorgallopo/Tracearr
+support: https://github.com/connorgallopo/Tracearr/issues
+developer: connorgallopo
+port: 3011
+gallery:
+  - 1.png
+  - 2.png
+  - 3.png
+path: ""
+releaseNotes: >-
+  This is a minor update with bug fixes and improvements.
+
+
+  Full release notes for Sonarr can be found at https://github.com/Sonarr/Sonarr/releases
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false

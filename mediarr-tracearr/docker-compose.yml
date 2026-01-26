@@ -1,0 +1,68 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: mediarr-tracearr_tracearr_1
+      APP_PORT: 8990
+
+# Tracearr - All-in-One Deployment (Bare Metal Only)
+#
+# Single container with TimescaleDB, Redis, and Tracearr bundled together.
+# **Designed for Unraid and intended for bare metal hosts only.**
+# **NOT recommended for VMs or nested containers.**
+#
+# Secrets are auto-generated on first run — no configuration required.
+#
+# REQUIREMENTS:
+#   - Minimum 3GB RAM (container runs PostgreSQL + Redis + Node.js)
+#   - Containers with less memory will crash with exit code 137 (OOM killed)
+#
+# DEPLOY:
+#   docker compose -f docker-compose.supervised-example.yml up -d
+#
+# Then open http://your-server:3000
+#
+# OPTIONAL ENVIRONMENT VARIABLES:
+#   PORT=3000              # External port mapping
+#   TZ=UTC                 # Timezone (e.g., America/New_York)
+#   LOG_LEVEL=info         # Log level (debug, info, warn, error)
+#   PG_MAX_MEMORY=2GB      # PostgreSQL memory limit (auto-detected from mem_limit)
+
+services:
+  tracearr:
+    image: ghcr.io/connorgallopo/tracearr:supervised
+    container_name: tracearr
+    shm_size: 512mb  # Required for PostgreSQL shared memory (increase for large imports)
+    mem_limit: 3g    # Minimum 3GB required (PostgreSQL + Redis + Node.js)
+    ports:
+      - 3011:3000
+    environment:
+      - TZ=Etc/UTC
+      - LOG_LEVEL=info
+      # - DATABASE_POOL_MAX=50  # Database connection pool size (default: 50)
+      # Secrets are auto-generated if not provided
+      # Uncomment to override:
+      # - JWT_SECRET=${JWT_SECRET}
+      # - COOKIE_SECRET=${COOKIE_SECRET}
+    volumes:
+      # Docker managed volumes (recommended)
+      - tracearr_postgres:/data/postgres
+      - tracearr_redis:/data/redis
+      - tracearr_data:/data/tracearr
+      #
+      # Bind mount alternative - uncomment below and comment out the above
+      # Make sure the directories exist and have correct permissions
+      # - ./data/postgres:/data/postgres
+      # - ./data/redis:/data/redis
+      # - ./data/tracearr:/data/tracearr
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:3000/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 3
+
+volumes:
+  tracearr_postgres:
+  tracearr_redis:
+  tracearr_data:
