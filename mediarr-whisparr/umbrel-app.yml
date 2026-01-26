@@ -27,3 +27,5 @@ releaseNotes: >-
 defaultUsername: ""
 defaultPassword: ""
 torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
