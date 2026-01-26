@@ -10,5 +10,5 @@ services:
     image: fnsys/dockhand:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - dockhand_data:/app/data
+      - ${APP_DATA_DIR}/data:/app/data
     restart: unless-stopped
