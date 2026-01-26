@@ -9,10 +9,11 @@ services:
       PROXY_AUTH_WHITELIST: "/api/*"
 
   nzbdav-rclone:
-    image: nzbdav/nzbdav:0.5.4
+    image: nzbdav/nzbdav:latest
     restart: unless-stopped
     volumes:
-      - ${APP_DATA_DIR}/config/rclone.conf:/config/rclone/rclone.conf
+      - ${APP_DATA_DIR}/config/rclone/rclone.conf:/config/rclone/rclone.conf:ro
+      - ${APP_DATA_DIR}/config/rclone/cache:/config/rclone/cache
       - ${UMBREL_ROOT}/data/storage/downloads/nzbdav:/downloads/nzbdav:rshared
     environment:
       # Change these IDs to match your Docker user that you got from above
@@ -39,6 +40,8 @@ services:
       --vfs-cache-mode=full
       --vfs-cache-max-size=20G
       --vfs-cache-max-age=24h
-      --buffer-size=64M
+      --buffer-size=1024
       --vfs-read-ahead=512M
       --dir-cache-time=20s
+      --allow-non-empty
+      --cache-dir=/config/rclone/cache

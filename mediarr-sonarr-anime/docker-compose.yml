@@ -3,12 +3,12 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: mediarr-sonarr_sonarr2_1
+      APP_HOST: mediarr-sonarr-anime_sonarr-anime_1
       APP_PORT: 8990
       PROXY_AUTH_WHITELIST: "/api/*"
 
-  sonarr2:
-    image: linuxserver/sonarr:4.0.16@sha256:4b8a853b76337cd5de5f69961e23b7d0792ce7bf0a8be083dd7202ef670bfc34
+  sonarr-anime:
+    image: linuxserver/sonarr:latest
     environment:
       - PUID=1000
       - PGID=1000
