@@ -11,7 +11,7 @@ services:
     image: nzbdav/nzbdav:latest
     restart: unless-stopped
     healthcheck:
-      test: curl -f http://localhost:3000/health || exit 1
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
       # Check every 1 minute
       interval: 1m
       # If it fails 3 times (3 minutes total), restart it
