@@ -4,7 +4,7 @@ name: NzbDAV
 tagline: Usenet streaming with a WebDAV server and a SABnzbd-compatible API
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/nzb-dav.png
 category: Downloaders
-version: "0.5.4"
+version: "latest"
 port: 3000
 description: >-
   NzbDav is a WebDAV server that allows you to mount and browse NZB documents as a virtual file system without downloading. It's designed to integrate with other media management tools, like Sonarr and Radarr, by providing a SABnzbd-compatible API. With it, you can build an infinite Plex or Jellyfin media library that streams directly from your usenet provider at maxed-out speeds, without using any storage space on your own server.

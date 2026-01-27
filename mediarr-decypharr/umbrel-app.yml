@@ -3,7 +3,7 @@ id: mediarr-decypharr
 name: Decypharr
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/decypharr.png
 category: Downloaders
-version: "1.1.6"
+version: "latest"
 tagline: A Qbittorent Mock with Debrid Support
 description: >-
  What is Decypharr?
