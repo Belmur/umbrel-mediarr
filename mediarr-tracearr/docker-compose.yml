@@ -56,7 +56,7 @@ services:
       # - ./data/tracearr:/data/tracearr
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://127.0.0.1:3000/health"]
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:3015/health"]
       interval: 30s
       timeout: 10s
       start_period: 60s
