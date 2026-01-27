@@ -48,8 +48,6 @@ services:
       - apparmor:unconfined
     devices:
       - /dev/fuse:/dev/fuse:rwm
-    depends_on:
-      - mediarr-nzbdav_nzbdav_1
     command: >-
       mount nzbdav: /Downloads/nzbdav
       --uid=1000
