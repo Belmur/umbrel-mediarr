@@ -1,6 +1,6 @@
 manifestVersion: 1.1
 id: mediarr-jellyfin
-category: media
+category: Media Server
 name: Jellyfin
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/jellyfin.svg
 version: "latest"

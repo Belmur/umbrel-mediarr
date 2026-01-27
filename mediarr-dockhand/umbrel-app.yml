@@ -2,7 +2,7 @@ manifestVersion: 1
 id: mediarr-dockhand
 name: Dockhand
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/dockhand.png
-category: media
+category: Server Management
 version: "latest"
 tagline: Modern Docker management for everyone.
 description: >-

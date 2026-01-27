@@ -1,6 +1,6 @@
 manifestVersion: 1.1
 id: mediarr-sabnzbd
-category: networking
+category: Downloaders
 name: SABnzbd
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/sabnzbd.svg
 version: "latest"

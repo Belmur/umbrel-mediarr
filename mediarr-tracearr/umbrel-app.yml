@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: mediarr-tracearr
 name: Tracearr
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/tracearr.png
-category: media
+category: "*arr Tools"
 version: "1.4.8"
 tagline: Real-time monitoring for Plex, Jellyfin, and Emby servers. Track streams, analyze playback, and detect account sharing from a single dashboard.
 description: >-

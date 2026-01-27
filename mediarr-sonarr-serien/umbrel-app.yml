@@ -1,6 +1,6 @@
 manifestVersion: 1.1
 id: mediarr-sonarr-serien
-category: media
+category: "*arr Tools"
 name: Sonarr Serien
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/sonarr.svg
 version: "latest"

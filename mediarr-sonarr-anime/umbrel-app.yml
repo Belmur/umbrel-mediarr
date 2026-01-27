@@ -1,6 +1,6 @@
 manifestVersion: 1.1
 id: mediarr-sonarr-anime
-category: media
+category: "*arr Tools"
 name: Sonarr Anime
 version: "latest"
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/sonarr.svg

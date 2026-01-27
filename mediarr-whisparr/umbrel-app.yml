@@ -2,7 +2,7 @@ manifestVersion: 1
 id: mediarr-whisparr
 name: Whisparr
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/whisparr.png
-category: media
+category: "*arr Tools"
 version: "3.0"
 tagline: Smart PVR for newsgroup and bittorrent users
 description: >-
