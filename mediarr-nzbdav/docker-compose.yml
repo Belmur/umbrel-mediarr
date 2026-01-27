@@ -3,7 +3,7 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: mediarr-nzbdav_nzbdav_rclone_1
+      APP_HOST: mediarr-nzbdav_nzbdav_1
       APP_PORT: 3000
       PROXY_AUTH_WHITELIST: "/api/*"
 
