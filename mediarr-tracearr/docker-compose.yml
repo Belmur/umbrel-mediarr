@@ -2,7 +2,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: mediarr-tracearr_tracearr_1
-      APP_PORT: 3011
+      APP_PORT: 3000
 
 # Tracearr - All-in-One Deployment (Bare Metal Only)
 #
