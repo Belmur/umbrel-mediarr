@@ -10,7 +10,7 @@ services:
       PROXY_AUTH_WHITELIST: "/api/*"
 
   nzbdav:
-    image: nzbdav/nzbdav:0.5.4
+    image: nzbdav/nzbdav:latest
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "bash -c ':> /dev/tcp/127.0.0.1/80' || exit 1"]
