@@ -22,7 +22,7 @@ services:
       timeout: 5s
     volumes:
       - ${APP_DATA_DIR}/config:/config
-      - ${UMBREL_ROOT}/data/storage/downloads/nzbdav:/downloads/nzbdav
+      - ${UMBREL_ROOT}/data/storage/Downloads/nzbdav:/Downloads/nzbdav
       - ${UMBREL_ROOT}/data/storage/Media:/Media
     environment:
       # Change these IDs to match your Docker user that you got from above
@@ -34,9 +34,9 @@ services:
     image: rclone/rclone:latest
     restart: unless-stopped
     volumes:
-      - ${APP_DATA_DIR}/config/rclone.conf:/config/rclone/rclone.conf:ro
-      - ${APP_DATA_DIR}/config/cache:/config/rclone/cache
-      - ${UMBREL_ROOT}/home/Downloads/nzbdav:/Downloads/nzbdav:rshared
+      - ${APP_DATA_DIR}/config/rclone:/config/rclone
+      - ${APP_DATA_DIR}/config/rclone/cache:/config/rclone/cache
+      - ${UMBREL_ROOT}/data/storage/Downloads/nzbdav:/Downloads/nzbdav:rshared
     environment:
       # Change these IDs to match your Docker user that you got from above
       - PUID=1000
@@ -48,6 +48,10 @@ services:
       - apparmor:unconfined
     devices:
       - /dev/fuse:/dev/fuse:rwm
+    depends_on:
+      nzbdav:
+        condition: service_healthy
+        restart: true  
     command: >-
       mount nzbdav: /Downloads/nzbdav
       --uid=1000
