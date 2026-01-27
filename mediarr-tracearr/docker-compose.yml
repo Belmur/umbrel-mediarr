@@ -27,14 +27,12 @@ services:
 #   LOG_LEVEL=info         # Log level (debug, info, warn, error)
 #   PG_MAX_MEMORY=2GB      # PostgreSQL memory limit (auto-detected from mem_limit)
 
-services:
+  
   tracearr:
     image: ghcr.io/connorgallopo/tracearr:supervised
     container_name: tracearr
     shm_size: 512mb  # Required for PostgreSQL shared memory (increase for large imports)
     mem_limit: 3g    # Minimum 3GB required (PostgreSQL + Redis + Node.js)
-    ports:
-      - 3011:3000
     environment:
       - TZ=Etc/UTC
       - LOG_LEVEL=info
@@ -61,8 +59,3 @@ services:
       timeout: 10s
       start_period: 60s
       retries: 3
-
-volumes:
-  tracearr_postgres:
-  tracearr_redis:
-  tracearr_data:
