@@ -15,5 +15,5 @@ services:
       - TZ=Etc/UTC
     volumes:
       - ${APP_DATA_DIR}/config:/config
-      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+      - ${UMBREL_ROOT}/home:/home
     restart: unless-stopped

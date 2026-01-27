@@ -14,7 +14,7 @@ services:
       - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+      - ${UMBREL_ROOT}/home:/home
     restart: on-failure
 
   mac:
@@ -23,7 +23,7 @@ services:
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+      - ${UMBREL_ROOT}/home:/home
     environment:
       APP_ID: "radarr"
       APP_URL: "http://mediarr-radarr_server_1:7878"

@@ -13,7 +13,7 @@ services:
     stop_grace_period: 1m
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+      - ${UMBREL_ROOT}/home/Downloads:/Downloads
     environment:
       - DOCKER_MODS=linuxserver/mods:universal-package-install
       - INSTALL_PACKAGES=ffmpeg
