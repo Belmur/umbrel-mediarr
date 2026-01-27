@@ -14,7 +14,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/config/rclone/rclone.conf:/config/rclone/rclone.conf:ro
       - ${APP_DATA_DIR}/config/rclone/cache:/config/rclone/cache
-      - ${UMBREL_ROOT}/data/storage/downloads/nzbdav:/downloads/nzbdav:rshared
+      - ${UMBREL_ROOT}/home/Downloads/nzbdav:/downloads/nzbdav:rshared
     environment:
       # Change these IDs to match your Docker user that you got from above
       - PUID=1000
@@ -31,7 +31,7 @@ services:
         conditions: service_healthy
         restart: true
     command: >
-    mount nzbdav: ${UMBREL_ROOT}/data/storage/downloads/nzbdav
+    mount nzbdav: ${UMBREL_ROOT}/home/Downloads/nzbdav
       --uid=1000
       --gid=1000
       --allow-other
