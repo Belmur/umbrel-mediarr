@@ -2,7 +2,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: mediarr-tracearr_tracearr_1
-      APP_PORT: 8990
+      APP_PORT: 3011
 
 # Tracearr - All-in-One Deployment (Bare Metal Only)
 #
@@ -45,9 +45,9 @@ services:
       # - COOKIE_SECRET=${COOKIE_SECRET}
     volumes:
       # Docker managed volumes (recommended)
-      - tracearr_postgres:/data/postgres
-      - tracearr_redis:/data/redis
-      - tracearr_data:/data/tracearr
+      - ${APP_DATA_DIR}/data/postgres:/data/postgres
+      - ${APP_DATA_DIR}/data/redis:/data/redis
+      - ${APP_DATA_DIR}/data/tracearr:/data/tracearr
       #
       # Bind mount alternative - uncomment below and comment out the above
       # Make sure the directories exist and have correct permissions
