@@ -1,20 +1,10 @@
 manifestVersion: 1.1
 id: mediarr-sonarr-anime
-name: Sonarr Anime
-icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/sonarr.png
 category: media
+name: Sonarr Anime
 version: "4.0.16.2944"
 tagline: Smart PVR for newsgroup and bittorrent users
 description: >-
-  This is a second instance of Sonarr based on the official Umbrel AppStore.
-  This can be used for 4k content or anime to keep your libraries separate.
-
-
-  ******* It does not populate Downloaders or Indexers ********
-  
-  ******* You need to set these up manually ********
-  
-
   Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
 
 
@@ -27,15 +17,15 @@ description: >-
   Add your indexers to Prowlarr and they will be automatically available in Sonarr.
 developer: Sonarr
 website: https://sonarr.tv/
-#dependencies:
- # - transmission
+dependencies:
+  - transmission
 repo: https://github.com/Sonarr/Sonarr
 support: https://github.com/Sonarr/Sonarr/issues
 port: 8990
 gallery:
-  - https://getumbrel.github.io/umbrel-apps-gallery/sonarr/1.jpg
-  - https://getumbrel.github.io/umbrel-apps-gallery/sonarr/2.jpg
-  - https://getumbrel.github.io/umbrel-apps-gallery/sonarr/3.jpg
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
 path: ""
 releaseNotes: >-
   This is a minor update with bug fixes and improvements.
@@ -47,3 +37,5 @@ defaultPassword: ""
 torOnly: false
 permissions:
   - STORAGE_DOWNLOADS
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel-apps/commit/60878f278d544b204d8e7c96240c797f43a9b319
