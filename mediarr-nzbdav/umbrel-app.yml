@@ -2,7 +2,7 @@ manifestVersion: 1
 id: mediarr-nzbdav
 name: NzbDAV
 tagline: Usenet streaming with a WebDAV server and a SABnzbd-compatible API
-icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/nzb-dav.svg
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/nzb-dav.png
 category: Downloaders
 version: "0.5.4"
 port: 3000

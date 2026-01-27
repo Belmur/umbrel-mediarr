@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: mediarr-whisparr
 name: Whisparr
-icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/whisparr.svg
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/whisparr.png
 category: media
 version: "3.0"
 tagline: Smart PVR for newsgroup and bittorrent users

@@ -11,7 +11,7 @@ description: >-
 website: https://dockhand.pro/
 repo: https://github.com/Finsys/dockhand
 support: https://github.com/Finsys/dockhand/issues
-port: 6969
+port: 3010
 gallery:
   - 1.jpg
   - 2.jpg
