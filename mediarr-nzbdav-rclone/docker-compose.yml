@@ -4,14 +4,15 @@ services:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: mediarr-nzbdav-rclone_nzbdav-rclone_1
+      APP_PORT: 5572
 
   nzbdav-rclone:
     image: rclone/rclone:latest
     restart: unless-stopped
     volumes:
-      - ${APP_DATA_DIR}/config/rclone/rclone.conf:/config/rclone/rclone.conf:ro
-      - ${APP_DATA_DIR}/config/rclone/cache:/config/rclone/cache
-      - ${UMBREL_ROOT}/home/Downloads/nzbdav:/Downloads/nzbdav:rshared
+      - ${APP_DATA_DIR}/config/rclone.conf:/config/rclone/rclone.conf:ro
+      - ${APP_DATA_DIR}/config/cache:/config/rclone/cache
+      - ${UMBREL_ROOT}/data/storage/Downloads/nzbdav:/Downloads/nzbdav:rshared
     environment:
       # Change these IDs to match your Docker user that you got from above
       - PUID=1000
@@ -28,7 +29,7 @@ services:
         conditions: service_healthy
         restart: true
     command: >
-    mount nzbdav: ${UMBREL_ROOT}/home/Downloads/nzbdav
+    mount nzbdav: ${UMBREL_ROOT}/data/storage/Downloads/nzbdav
       --uid=1000
       --gid=1000
       --allow-other
@@ -42,3 +43,5 @@ services:
       --dir-cache-time=20s
       --allow-non-empty
       --cache-dir=${APP_DATA_DIR}/config/rclone/cache
+      --rc
+      --rc-addr=umbrel.local:5572
