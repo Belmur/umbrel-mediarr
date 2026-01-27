@@ -1,12 +1,9 @@
-version: "3.7"
-
 services:
 
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: mediarr-nzbdav-rclone_nzbdav-rclone_1
-      PROXY_AUTH_WHITELIST: "/api/*"
 
   nzbdav-rclone:
     image: rclone/rclone:latest
@@ -45,3 +42,5 @@ services:
       --dir-cache-time=20s
       --allow-non-empty
       --cache-dir=/config/rclone/cache
+
+  
