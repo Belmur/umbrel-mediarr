@@ -8,7 +8,9 @@ services:
 
   dockhand:
     image: fnsys/dockhand:latest
+    ports:
+      - 3010:3000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ${APP_DATA_DIR}/data:/app/data
-    restart: unless-stopped
+    restart: restart on-failure
