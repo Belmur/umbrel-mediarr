@@ -67,3 +67,4 @@ services:
       --dir-cache-time=20s
       --allow-non-empty
       --cache-dir=/config/rclone/cache
+      --config=/config/rclone/rclone.conf
