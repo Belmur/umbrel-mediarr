@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: mediarr-radarr
 category: "*arr Tools"
 name: Radarr
-icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/radarr.svg
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/sonarr-radarr.svg
 version: "latest"
 tagline: Your movie collection manager
 description: >-
@@ -18,8 +18,6 @@ description: >-
   Add your indexers to Prowlarr and they will be automatically available in Radarr.
 developer: Radarr
 website: https://radarr.video/
-dependencies:
-  - transmission
 repo: https://github.com/Radarr/Radarr
 support: https://github.com/Radarr/Radarr/issues
 port: 7878

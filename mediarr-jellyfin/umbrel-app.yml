@@ -21,7 +21,6 @@ description: >-
   The Jellyfin server and clients are free to download, now and always. There are no costs, hidden or otherwise, to use Jellyfin, either for yourself, for your friends, or for your company. All our incidental costs are paid through donations from users like you.
 developer: Jellyfin
 website: https://jellyfin.org/
-dependencies: []
 repo: https://github.com/jellyfin/jellyfin
 support: https://github.com/jellyfin/jellyfin/issues
 port: 8096
