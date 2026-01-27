@@ -1,6 +1,7 @@
 manifestVersion: 1
 id: mediarr-emby
 name: Emby
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/emby.svg
 tagline: A personal media server
 category: media
 version: "latest"

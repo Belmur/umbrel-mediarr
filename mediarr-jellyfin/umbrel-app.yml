@@ -2,7 +2,8 @@ manifestVersion: 1.1
 id: mediarr-jellyfin
 category: media
 name: Jellyfin
-version: "10.11.6"
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/jellyfin.svg
+version: "latest"
 tagline: The Free Software Media System
 description: >-
   Jellyfin is the volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached. Your media, your server, your way.

@@ -2,7 +2,8 @@ manifestVersion: 1.1
 id: mediarr-sabnzbd
 category: networking
 name: SABnzbd
-version: "4.5.5"
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/sabnzbd.svg
+version: "latest"
 tagline: The automated Usenet download tool
 description: >-
   SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb.
