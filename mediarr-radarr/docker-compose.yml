@@ -12,5 +12,6 @@ services:
       - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
-      - ${UMBREL_ROOT}/home:/home
+      - ${UMBREL_ROOT}/home/Media:/Media
+      - ${UMBREL_ROOT}/home/Downloads:/Downloads
     restart: on-failure

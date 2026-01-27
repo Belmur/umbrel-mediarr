@@ -13,7 +13,7 @@ services:
       - TZ=Etc/UTC
     volumes:
       - ${APP_DATA_DIR}/config:/app
-      - ${UMBREL_ROOT}/data/storage/downloads/decypharr:/downloads/decypharr:rshared
+      - ${UMBREL_ROOT}/home/Downloads/decypharr:/Downloads/decypharr:rshared
     restart: unless-stopped
     devices:
       - /dev/fuse:/dev/fuse:rwm

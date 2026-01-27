@@ -1,5 +1,4 @@
 services:
-
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
@@ -22,7 +21,8 @@ services:
       timeout: 5s
     volumes:
       - ${APP_DATA_DIR}/config:/config
-      - ${UMBREL_ROOT}/home:/home
+      - ${UMBREL_ROOT}/home/Downloads:/Downloads
+      - ${UMBREL_ROOT}/home/Media:/Media
     environment:
       # Change these IDs to match your Docker user that you got from above
       - PUID=1000
