@@ -5,7 +5,7 @@ icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/emby.svg
 tagline: A personal media server
 category: Media Server
 version: "latest"
-port: 8097
+port: 8098
 description: >-
   ▶️ Emby is a powerful media server software designed to help users manage, stream, and enjoy their personal collection of movies, TV shows, music, photos, and home videos across a wide range of devices. It acts as a central hub for all your digital media, automatically organizing content and enriching it with metadata like cover art, descriptions, and ratings. Emby provides a clean and intuitive interface that allows users to easily browse and play their media, whether they are at home or on the go.
 
