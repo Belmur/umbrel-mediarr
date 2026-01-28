@@ -1,11 +1,11 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: mediarr-emby_server_1
+      APP_HOST: mediarr-emby_linuxserver_1
       APP_PORT: 8096
       PROXY_AUTH_ADD: "false"
 
-  server:
+  linuxserver:
     image: linuxserver/emby:latest
     environment:
       TZ: Etc/UTC
