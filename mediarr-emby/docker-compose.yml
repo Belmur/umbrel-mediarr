@@ -14,5 +14,5 @@ services:
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/config:/config:rw
-      - ${UMBREL_ROOT}/home/:/Media
+      - ${UMBREL_ROOT}/home/Media:/Media
       - ${UMBREL_ROOT}/home/Downloads/:/Downloads
