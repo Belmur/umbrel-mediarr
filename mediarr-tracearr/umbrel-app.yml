@@ -47,10 +47,6 @@ description: >-
 repo: https://github.com/connorgallopo/Tracearr
 support: https://github.com/connorgallopo/Tracearr/issues
 developer: connorgallopo
-gallery:
-  - 1.png
-  - 2.png
-  - 3.png
 path: ""
 releaseNotes: >-
   This is a minor update with bug fixes and improvements.

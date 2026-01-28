@@ -1,0 +1,18 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: mediarr-emby2_server_1
+      APP_PORT: 8096
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: emby/embyserver:latest
+    environment:
+      TZ: Etc/UTC
+      UID: 1000
+      GID: 1000
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config:rw
+      - ${UMBREL_ROOT}/home/:/Media
+      - ${UMBREL_ROOT}/home/Downloads/:/Downloads
