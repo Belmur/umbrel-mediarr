@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: mediarr-emby2
-name: Emby 2
+name: Emby
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/emby.svg
 tagline: Official Emby Release
 category: Media Server
