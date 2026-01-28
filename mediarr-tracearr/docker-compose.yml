@@ -44,7 +44,7 @@ services:
       # Docker managed volumes (recommended)
       - ${APP_DATA_DIR}/data/postgres:/data/postgres
       - ${APP_DATA_DIR}/data/redis:/data/redis
-      - ${APP_DATA_DIR}/data/tracearr:/data/tracearr
+      - ${APP_DATA_DIR}/data/tracearr:/data/tracearr 
       #
       # Bind mount alternative - uncomment below and comment out the above
       # Make sure the directories exist and have correct permissions

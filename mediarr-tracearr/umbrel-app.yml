@@ -44,6 +44,11 @@ description: >-
 
  Data Import — Already using Tautulli or Jellystat? Import your watch history so you don't start from scratch.
 
+gallery:
+- 1.png
+- 2.png
+- 3.png
+
 repo: https://github.com/connorgallopo/Tracearr
 support: https://github.com/connorgallopo/Tracearr/issues
 developer: connorgallopo

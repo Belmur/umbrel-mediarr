@@ -1,0 +1,17 @@
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: mediarr-prowlarr_server_1
+      APP_PORT: 9696
+      PROXY_AUTH_WHITELIST: "/api/*"
+
+  server:
+    image: linuxserver/prowlarr:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${UMBREL_ROOT}/home/Downloads:/Downloads
+    restart: on-failure
