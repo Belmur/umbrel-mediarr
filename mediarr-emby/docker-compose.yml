@@ -8,10 +8,11 @@ services:
   server:
     image: linuxserver/emby:latest
     environment:
-      TZ: Europe/Berlin
+      TZ: Etc/UTC
       UID: 1000
       GID: 1000
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/config:/config:rw
-      - ${UMBREL_ROOT}/home/Media:/Media
+      - ${UMBREL_ROOT}/home/:/Media
+      - ${UMBREL_ROOT}/home/Downloads/:/Downloads
