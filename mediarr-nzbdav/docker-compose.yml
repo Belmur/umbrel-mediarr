@@ -50,7 +50,7 @@ services:
     depends_on:
       nzbdav:
         condition: service_healthy
-        restart: true  
+        restart: true
     command: >-
       mount nzbdav: /home/Downloads/nzbdav
       --uid=1000
@@ -60,9 +60,9 @@ services:
       --use-cookies
       --vfs-cache-mode=full
       --vfs-cache-max-size=20G
-      --vfs-cache-max-age=24h
-      --buffer-size=0
+      --vfs-cache-max-age=6h
       --vfs-read-ahead=512M
+      --buffer-size=0
       --dir-cache-time=20s
       --allow-non-empty
       --cache-dir=/config/rclone/cache
