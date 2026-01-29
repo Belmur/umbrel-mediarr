@@ -1,6 +1,7 @@
 manifestVersion: 1
 id: mediarr-wizarr
 name: Wizarr
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/wizarr.svg
 tagline: An advanced invitation and management system for media servers
 category: Media Management
 version: "latest"
