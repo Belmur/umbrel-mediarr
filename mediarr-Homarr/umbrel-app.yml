@@ -2,7 +2,8 @@ manifestVersion: 1
 id: mediarr-homarr
 name: Homarr
 tagline: A customizable browser home page
-category: "Server Managment"
+category: "Server Management"
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/homarr.svg
 version: "latest"
 port: 7575
 description: >-
