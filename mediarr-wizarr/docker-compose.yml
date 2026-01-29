@@ -13,4 +13,4 @@ services:
       - PUID=1000
       - PGID=1000
       - DISABLE_BUILTIN_AUTH=false
-      - TZ=UTC
+      - TZ=ETC/UTC

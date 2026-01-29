@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: mediarr-prowlarr
-category: "*arr Tools"
+category: "Arr"
 name: Prowlarr
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/prowlarr.svg
 version: "latest-flaresolverr"

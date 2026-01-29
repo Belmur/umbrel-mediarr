@@ -1,6 +1,6 @@
 manifestVersion: 1.1
 id: mediarr-radarr
-category: "*arr Tools"
+category: "Arr"
 name: Radarr
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/radarr-light-hybrid.svg
 version: "latest"
