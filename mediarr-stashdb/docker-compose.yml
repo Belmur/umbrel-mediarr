@@ -24,4 +24,5 @@ services:
       - ${APP_DATA_DIR}/blobs:/blobs
       - ${UMBREL_ROOT}/home/Downloads:/Downloads
       - ${UMBREL_ROOT}/home/Media:/Media
+
     restart: unless-stopped
