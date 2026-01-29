@@ -1,0 +1,12 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: mediarr-jellyseerr_server_1
+      APP_PORT: 5055
+      PROXY_AUTH_WHITELIST: "/api/*"
+
+  server:
+    image: fallenbagel/jellyseerr:latest
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/app/config
+    restart: on-failure
