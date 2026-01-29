@@ -1,8 +1,8 @@
 manifestVersion: 1
-id: stashdb
+id: mediarr-stashdb
 name: StashDB
 tagline: An organizer for your porn, written in Go. 
-icon: https://svgur.com/i/mvA.svg
+icon: https://avatars.githubusercontent.com/u/24867479?s=200&v=4
 category: Media Server
 version: "latest"
 port: 9999
