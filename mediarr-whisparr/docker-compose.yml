@@ -1,13 +1,11 @@
-version: "3.7"
-
 services:
   app_proxy:
     environment:
-      APP_HOST: mediarr-whisparr_whisparr_1
+      APP_HOST: mediarr-whisparr_server_1
       APP_PORT: 6969
       PROXY_AUTH_WHITELIST: "/api/*"
       
-  whisparr:
+  server:
     image: ghcr.io/hotio/whisparr:v3
     environment:
       - PUID=1000
