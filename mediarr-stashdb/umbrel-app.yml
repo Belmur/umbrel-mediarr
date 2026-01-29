@@ -1,4 +1,4 @@
-manifestVersion: 1
+manifestVersion: 1.1
 id: mediarr-stashdb
 name: StashDB
 tagline: An organizer for your porn, written in Go. 
