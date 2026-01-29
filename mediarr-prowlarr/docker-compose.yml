@@ -18,3 +18,24 @@ services:
   indexer_proxy:
     image: flaresolverr/flaresolverr:v3.4.6@sha256:7962759d99d7e125e108e0f5e7f3cdbcd36161776d058d1d9b7153b92ef1af9e
     restart: on-failure
+
+  umlautadaptarr:
+    image: pcjones/umlautadaptarr:latest
+    restart: unless-stopped
+    ports:
+#      - "5005:5005" # can be removed if you use the recommended prowlarr+proxy configuration 
+      - "5006:5006" # can be removed if you use the alternative, non-proxy configuration
+    environment:
+      - TZ=Europe/Berlin
+      - SONARR__ENABLED=true
+      - SONARR__HOST=http://mediarr-sonarr-serien_server_1:8989
+      - SONARR__APIKEY=f0765e201c804c029e521bf5714ca5c3
+      - RADARR__ENABLED=true
+      - RADARR__HOST=http://mediarr-radarr_server_1:7878
+      - RADARR__APIKEY=13cd103fd1db4e70a1c15f46e32b8a09
+#      - READARR__ENABLED=false
+#      - READARR__HOST=http://localhost:8787
+#      - READARR__APIKEY=APIKEY
+#      - LIDARR__ENABLED=false
+#      - LIDARR__HOST=http://localhost:8686
+#      - LIDARR__APIKEY=APIKEY
