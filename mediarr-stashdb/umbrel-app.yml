@@ -1,0 +1,32 @@
+manifestVersion: 1
+id: stashdb
+name: StashDB
+tagline: An organizer for your porn, written in Go. 
+icon: https://svgur.com/i/mvA.svg
+category: Media Server
+version: "latest"
+port: 9999
+description: >-
+  Stash is a self-hosted webapp written in Go which organizes and serves your diverse content collection, catering to both your SFW and NSFW needs.
+
+developer: stashapp
+website: https://docs.stashapp.cc
+repo: https://github.com/stashapp/stash
+support: https://github.com/stashapp/stash/issues
+gallery:
+  - 1.png
+  - 2.png
+  - 3.png
+releaseNotes: >-
+  🐛 Bug fixes
+  fixed hardware encode tests preventing desktop features from working correctly. (#6417)
+
+
+  fixed Handy integration not functioning correctly. (#6425)
+  
+
+  fixed gallery create graphql interface not setting organised flag. (#6418)
+dependencies: []
+permissions:
+  - STORAGE_DOWNLOADS
+  - GPU
